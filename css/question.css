@@ -1,0 +1,87 @@
+.box1 {
+    margin-top: 30px;
+    border-bottom: 2px solid #c40000;
+}
+
+.box1 span {
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+.box2 {
+    margin: 20px 0 30px;
+    padding-left: 30px;
+    line-height: 25px;
+    font-size: 15px;
+    color: #333;
+}
+
+.box3,
+.box4,
+.box5 {
+    height: 200px;
+    margin-bottom: 10px;
+    border: 1px solid #cce8ff;
+}
+
+.box3 h3,
+.box4 h3,
+.box5 h3 {
+    height: 25px;
+    padding-left: 20px;
+    line-height: 25px;
+    background-color: #eef6ff;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+}
+
+.box3 textarea {
+    margin: 30px 0 0 30px;
+    resize: none;
+    /* outline: none; */
+}
+
+.box4 {
+    height: 150px;
+}
+
+.box4 i,
+a {
+    color: #ed1b55;
+}
+
+.box4 div {
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.box5 {
+    height: 130px;
+}
+
+.box5 div {
+    margin: 20px 0 10px 40px;
+}
+
+.box5 div input {
+    border: 1px solid #ccc;
+}
+
+.box6 {
+    height: 35px;
+    margin-bottom: 50px;
+    border: 1px solid #cce8ff;
+    background-color: #eef6ff;
+    text-align: center;
+}
+
+.box6 button {
+    width: 50px;
+    height: 35px;
+    border: 1px solid #0070a3;
+    border-radius: 5px;
+    background-color: #d7ebf9;
+    color: #0070a3;
+    font-weight: 700;
+}

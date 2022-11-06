@@ -1,0 +1,635 @@
+/* 模块化开发，页面结构和样式相同的引入同一个CSS文件 */
+
+.shortcut {
+    height: 30px;
+    line-height: 30px;
+    background-color: #e3e4e5;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+.shortcut .fr ul li:nth-child(2n) {
+    /* 给顶部右侧导航栏之间添加竖线间隔(even) */
+    width: 1px;
+    height: 15px;
+    margin: 8px 5px 0;
+    background-color: #666;
+}
+
+.shortcut .fr ul li:nth-child(odd) {
+    padding: 0 5px;
+    font-family: 'icomoon';
+}
+
+.shortcut .fr ul li:nth-child(2n+1):hover {
+    background-color: #fff;
+}
+
+.location-icon::before {
+    content: '\e948';
+    margin-right: 5px;
+    color: #ed1b55;
+}
+
+.shortcut .fr .add-icons::after {
+    content: '\ea43';
+    margin-left: 5px;
+}
+
+
+/* 下拉菜单栏 */
+
+.shortcut .down-menu li {
+    position: relative;
+}
+
+.shortcut .down-menu li .down {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 9;
+    width: 175px;
+    border: 1px solid #bbb;
+    border-top: none;
+    background-color: #fff;
+}
+
+.down dl {
+    float: left;
+    margin-right: 20px;
+    padding-left: 6px;
+}
+
+.down dl dt {
+    font-weight: 700;
+}
+
+.down-menu #city .down {
+    width: 288px;
+}
+
+.down-menu #city .down dd {
+    text-align: center;
+    cursor: pointer;
+}
+
+.down-menu #city .down dd.checked {
+    /* 不要随便加!important */
+    background-color: #ed1b55 !important;
+    color: #fff !important;
+}
+
+.down-menu #city .down dd:hover {
+    background-color: #eee;
+    color: #ed1b55;
+}
+
+.down-menu #purchase .down {
+    width: 150px;
+}
+
+.down-menu #attention .down {
+    width: 88px;
+    border: 0;
+}
+
+.down-menu #service .down {
+    width: 155px;
+}
+
+.down-menu #service .down dl:first-child {
+    margin-right: 0;
+    padding-right: 20px;
+    border-right: 1px dotted #bbb;
+}
+
+.down-menu #nav .down {
+    width: 76px;
+}
+
+.header {
+    background-color: #fff;
+}
+
+.header .w {
+    position: relative;
+    height: 105px;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+.logo a {
+    display: block;
+    width: 175px;
+    height: 56px;
+    background: url(../img/logo1.png) no-repeat;
+    font-size: 0px;
+    /* a标签里的字不显示 */
+    /* text-indent: -9999px;
+    overflow: hidden; */
+}
+
+.search {
+    position: absolute;
+    top: 25px;
+    left: 310px;
+    width: 504px;
+    height: 34px;
+    border: 2px solid #ed1b55;
+}
+
+.search input {
+    float: left;
+    width: 450px;
+    height: 30px;
+    padding-left: 15px;
+}
+
+.search button::before {
+    content: '\e90f';
+    position: absolute;
+    top: 7px;
+    right: 70px;
+    color: #bbb;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 30px;
+    background-color: #ed1b55;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'icomoon';
+}
+
+.search button:hover {
+    color: #bbb;
+}
+
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 310px;
+}
+
+.hotwords a {
+    padding: 0 10px;
+}
+
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    width: 160px;
+    height: 35px;
+    text-align: center;
+    line-height: 33px;
+    border: 1px solid #999;
+    font-family: 'icomoon';
+}
+
+.shopcar:hover {
+    border-color: #ed1b55;
+}
+
+.shopcar::before {
+    content: '\e93a';
+    margin-right: 5px;
+    color: #ed1b55;
+}
+
+.shopcar::after {
+    content: '\ea42';
+    margin-left: 5px;
+}
+
+
+/* 子绝父绝，祖先元素有定位即可，不一定非要相对定位 */
+
+.count {
+    position: absolute;
+    top: -5px;
+    left: 130px;
+    height: 14px;
+    padding: 0 5px;
+    border-radius: 7px 7px 7px 0;
+    line-height: 14px;
+    background-color: #ed1b55;
+    color: #fff;
+    font-weight: 700;
+}
+
+.nav {
+    height: 46px;
+    line-height: 45px;
+    border-bottom: 1px solid#666;
+    background-color: #fff;
+}
+
+.dropdown {
+    float: left;
+    width: 220px;
+    height: 45px;
+    background-color: #666;
+}
+
+.dt {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.dd {
+    /* 暂时隐藏 */
+    /* display: none; */
+    width: 220px;
+    height: 465px;
+    margin-top: 1px;
+    background-color: #fff;
+}
+
+.dd ul li {
+    height: 33px;
+    line-height: 33px;
+    padding: 0 10px;
+    transition: all .5s;
+}
+
+.dd ul li a {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dd ul li:hover {
+    background-color: #666;
+}
+
+.dd ul li:hover a {
+    color: #fff;
+}
+
+.dd ul li a:hover {
+    color: #ed1b55;
+}
+
+.dd ul li::after {
+    content: '>';
+    float: right;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navitems ul li {
+    float: left;
+}
+
+.navitems ul li a {
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+
+/* list+item */
+
+.dt-l-i {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+.dt-l-i p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.dt-l-i:hover .dd-l-i {
+    display: block;
+}
+
+.dd-l-i {
+    /* 暂时隐藏 */
+    display: none;
+    position: relative;
+    z-index: 99;
+    margin-top: 1px;
+    background-color: #fff;
+}
+
+.dd-l-i li {
+    height: 33px;
+    line-height: 33px;
+    padding: 0 10px;
+    text-align: left;
+    color: #666;
+    transition: all .5s;
+}
+
+.dd-l-i li:hover {
+    background-color: #666;
+}
+
+.dd-l-i li:hover a {
+    color: #fff;
+}
+
+.dd-l-i li a:hover {
+    color: #ed1b55;
+}
+
+.dd-l-i li::after {
+    content: '>';
+    float: right;
+    font-size: 16px;
+}
+
+.footer {
+    height: 450px;
+    padding-top: 30px;
+    background-color: #f5f5f5;
+}
+
+.mod_service {
+    height: 90px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_service ul li {
+    float: left;
+    width: 300px;
+    height: 62px;
+    padding-left: 35px;
+}
+
+.mod_service ul li h4 {
+    float: left;
+    width: 62px;
+    height: 62px;
+    background: url(../img/zp.png) no-repeat;
+    margin-right: 15px;
+}
+
+.mod_service ul li:nth-child(2) h4 {
+    background: url(../img/zp1.png);
+}
+
+.mod_service ul li:nth-child(3) h4 {
+    background: url(../img/zp2.png);
+}
+
+.mod_service ul li:nth-child(4) h4 {
+    background: url(../img/zp3.png);
+}
+
+.service_text h5 {
+    padding-top: 13px;
+    font-size: 14px;
+}
+
+.service_text p {
+    font-size: 12px;
+}
+
+.mod_help {
+    height: 205px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.mod_help dl {
+    float: left;
+    width: 200px;
+}
+
+.mod_help dl:last-child {
+    width: 95px;
+    text-align: center;
+}
+
+.mod_help dl dt {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.mod_help dl dd {
+    height: 23px;
+    line-height: 23px;
+    font-size: 12px;
+}
+
+
+/* 广告模块 */
+
+.banner-l-s {
+    /* list+shopcar */
+    margin: 10px 0;
+}
+
+.banner {
+    background-color: #fff;
+}
+
+.banner a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.banner a img {
+    width: 1200px;
+    height: 70px;
+}
+
+.banner a span {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-weight: 700;
+    color: #fff;
+}
+
+.banner a span:hover {
+    border-color: #ed1b55;
+    color: #ed1b55;
+}
+
+
+/* 猜你喜欢模块 */
+
+.like-hd {
+    height: 30px;
+    line-height: 30px;
+    margin: 20px 0 10px;
+}
+
+.like-hd .fl h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.like-hd .fr a {
+    margin-right: 10px;
+}
+
+.renew-icon::after {
+    content: '\ea2e';
+    margin-left: 5px;
+    font-family: 'icomoon';
+}
+
+.like-bd ul {
+    display: flex;
+    text-align: center;
+    border: 1px solid #e4e4e4;
+    background-color: #fff;
+}
+
+.like-bd ul.hide {
+    display: none;
+}
+
+.like-bd ul li {
+    flex: 1;
+    border-right: 1px solid #ccc;
+}
+
+.like-bd ul li:last-child {
+    border-right: none;
+}
+
+.like-bd ul li a img {
+    width: 142px;
+    height: 142px;
+    margin-top: 20px;
+    transition: all .5s;
+}
+
+.like-bd ul li a:hover img {
+    transform: scale(1.02);
+    opacity: .7;
+}
+
+.like-bd ul li a p {
+    margin: 10px 0;
+}
+
+.like-bd ul li a span {
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 25px;
+    line-height: 23px;
+    margin: 0 auto 20px;
+    border: 1px solid #ed1b55;
+    background-color: #ed1b55;
+    text-indent: -5rem;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.like-bd ul li a:hover span {
+    background: -webkit-linear-gradient(left top, #ec4141, #fff32b);
+}
+
+.like-bd ul li a span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 73px;
+    width: 0;
+    height: 0;
+    /* CSS三角形的制作 */
+    border-width: 23px 15px 0 0;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+}
+
+.like-bd ul li a span del {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 23px;
+    background-color: #fff;
+    color: #666;
+    font-size: 12px;
+    font-weight: 400;
+    text-indent: 0;
+}
+
+
+/* 固定侧边栏 */
+
+.aside {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 275px;
+    font-family: 'icomoon';
+}
+
+.aside>div {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #c0c0c5;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.aside>div:hover,
+.aside>div a:hover {
+    color: #ed1b55;
+}
+
+.aside>div a {
+    /* a原本是行内元素，不可设置宽高。但由于加了定位，有行内块元素的特点了 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 降低定位层级，否则会覆盖上面的div */
+    z-index: -1;
+    width: 90px;
+    height: 30px;
+    padding-left: 10px;
+    text-align: left;
+    /* 字体先隐藏，大小由js控制 */
+    font-size: 0;
+    color: #fff;
+    background-color: #c0c0c5;
+}
+
+.erweima:hover .ma {
+    display: block;
+}
+
+.ma {
+    position: absolute;
+    top: -30px;
+    left: -94px;
+}

@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* CSS3盒子模型 */
+    box-sizing: border-box;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ed1b55;
+}
+
+button,
+input {
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    border: 0;
+    outline: none;
+    vertical-align: middle;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666;
+}
+
+.hide,
+.none {
+    display: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+@font-face {
+    /* 和js一样，只要前面引入一个就行，后面的都可使用 */
+    /* 字体图标声明，注意fonts和common.css不在同一目录下 ，而在上一级../ */
+    src: url('../fonts/icomoon.eot?w0t469');
+    src: url('../fonts/icomoon.eot?w0t469#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?w0t469') format('truetype'), url('../fonts/icomoon.woff?w0t469') format('woff'), url('../fonts/icomoon.svg?w0t469#icomoon') format('svg');
+    font-family: 'icomoon';
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.style_red {
+    color: #ed1b55;
+}
+
+.mod_copyright {
+    text-align: center;
+}
+
+.mod_copyright .links {
+    padding: 15px 0 10px;
+}
+
+.mod_copyright i {
+    margin: 0 8px;
+}
+
+.mod_copyright .copyright {
+    line-height: 25px;
+}

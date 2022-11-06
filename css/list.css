@@ -1,0 +1,489 @@
+.phone-hd>p {
+    height: 30px;
+    line-height: 30px;
+    /* user agent stylesheet重置 ，不然自己设置的样式无法生效*/
+    display: block;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.phone-hd .brand {
+    height: 120px;
+}
+
+.phone-hd>div {
+    height: 35px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.phone-hd>div:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+.phone-hd h5 {
+    float: left;
+    width: 100px;
+    height: 100%;
+    padding: 8px 0 0 8px;
+    background-color: #f5f5f5;
+    font-size: 12px;
+}
+
+.brand-bd {
+    float: left;
+    width: 930px;
+    height: 96px;
+    margin: 12px 0 0 12px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    list-style-type: none;
+    margin-block-start: 12px;
+    margin-block-end: 0;
+    margin-inline-start: 12px;
+    margin-inline-end: 0;
+    /* block->上下  inline->左右 */
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+
+.brand-bd li {
+    float: left;
+    width: 116px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.brand-bd li a {
+    position: relative;
+    display: block;
+}
+
+.brand-bd li a:hover p {
+    display: block;
+}
+
+.brand-bd li a p {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 116px;
+    height: 48px;
+    border: 1px solid #ed1b55;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.brand-bd li a img {
+    width: 102px;
+    height: 36px;
+}
+
+.brand,
+.size,
+.RAM {
+    position: relative;
+}
+
+.box {
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+
+.box span {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    margin-right: 6px;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    font-family: 'icomoon';
+    cursor: pointer;
+}
+
+.box span:hover {
+    color: #ed1b55;
+}
+
+.sort-bd,
+.size-bd,
+.RAM-bd,
+.option-bd {
+    float: left;
+    width: 900px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 10px;
+}
+
+.sort-bd a,
+.size-bd a,
+.RAM-bd a {
+    margin-right: 25px;
+}
+
+.option-bd select {
+    width: 78px;
+    margin-right: 25px;
+}
+
+.phone-bd {
+    margin-top: 10px;
+}
+
+.phone-bd .box1 {
+    position: relative;
+    height: 40px;
+    padding: 7px 8px 0 8px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+}
+
+.phone-bd .box1>a {
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 26px;
+    font-family: 'icomoon';
+}
+
+.phone-bd .box1>a.checked {
+    background-color: #ed1b55;
+    color: #fff;
+}
+
+.phone-bd .box1 ul {
+    position: absolute;
+    top: 7px;
+    left: 285px;
+    width: 102px;
+    height: 26px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transform: rotate(180deg);
+}
+
+.phone-bd .box1 ul li {
+    float: left;
+    width: 20px;
+    height: 5px;
+    background-color: #999;
+    border-bottom: 1px solid #666;
+}
+
+.phone-bd .box1 ul li>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.phone-bd .box1 ul li:hover {
+    background-color: #ed1b55;
+    border-color: red;
+}
+
+.phone-bd .box1 ul li:nth-child(2) {
+    height: 13px;
+}
+
+.phone-bd .box1 ul li:nth-child(3) {
+    height: 23px;
+}
+
+.phone-bd .box1 ul li:nth-child(4) {
+    height: 18px;
+}
+
+.phone-bd .box1 ul li:nth-child(5) {
+    height: 8px;
+}
+
+.phone-bd .box1 .input {
+    position: absolute;
+    top: 7px;
+    left: 400px;
+}
+
+.phone-bd .box1 .input input {
+    width: 60px;
+    height: 26px;
+    border: 1px solid #ccc;
+}
+
+.phone-bd .box1 .input button {
+    width: 40px;
+    height: 26px;
+    border: 1px solid #ccc;
+}
+
+.phone-bd .box1 .btn {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+.phone-bd .box1 .btn button {
+    width: 40px;
+    height: 26px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.phone-bd button:hover {
+    color: #ed1b55;
+}
+
+.phone-bd .box2 {
+    height: 40px;
+    padding: 9px 10px 0 8px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+.phone-bd .box2 label {
+    margin-left: 5px;
+}
+
+.phone-bd .box2 div {
+    float: right;
+}
+
+.phone-bd .box2 div input {
+    float: left;
+    width: 100px;
+    border: 1px solid #ccc;
+}
+
+.phone-bd .box2 div button {
+    float: left;
+    border: 1px solid #ccc;
+    border-left: 0;
+}
+
+.phone-bd .main li {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 440px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.phone-bd .main li:hover {
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+.phone-bd .main li:hover .show {
+    display: block;
+}
+
+.main .show {
+    display: none;
+    position: absolute;
+    top: 208px;
+    right: 10px;
+    width: 50px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    background-color: rgba(0, 0, 0, .4);
+    color: #fff;
+    font-family: 'icomoon';
+    cursor: pointer;
+}
+
+.main .show:hover {
+    color: #ed1b55;
+}
+
+.main .bigImg {
+    display: block;
+    width: 220px;
+    height: 220px;
+}
+
+.main .bigImg>img {
+    width: 220px;
+    height: 220px;
+    transition: all .5s;
+}
+
+.main .bigImg>img:hover {
+    transform: scale(1.02);
+    opacity: .7;
+}
+
+.main .littleImg {
+    margin: 5px 0 10px;
+}
+
+.main .littleImg em {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    padding-top: 3px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .littleImg em:hover,
+.main .littleImg em.active {
+    border: 2px solid #ed1b55;
+}
+
+.main .littleImg em>img {
+    width: 24px;
+    height: 24px;
+}
+
+.main .price {
+    height: 22px;
+    line-height: 22px;
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ed1b55;
+}
+
+.main .price i {
+    font-size: 12px;
+}
+
+.main .intro a {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main .evaluate {
+    margin: 8px 0 5px;
+}
+
+.main .evaluate b {
+    color: #646fb7;
+}
+
+.main .p-icon span {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 0 5px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 2px;
+    background-color: #ed1b55;
+    color: #fff;
+}
+
+.p-icon span:nth-child(2) {
+    border: 1px solid #4d88ff;
+    background-color: #fff;
+    color: #4d88ff;
+}
+
+.p-icon span:nth-child(3) {
+    background-color: #31c19e;
+}
+
+.p-icon span:last-child {
+    border: 1px solid #ed1b55;
+    background-color: #fff;
+    color: #ed1b55;
+}
+
+
+/* 分页导航模块 */
+
+.page-navigation {
+    margin-top: 20px;
+    padding-left: 235px;
+}
+
+.page-navigation a,
+.page-navigation>b {
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 5px;
+    padding: 0 12px;
+    /* 注：行内元素可加水平方向上的margin、padding值；垂直方向不可 */
+}
+
+.page-navigation a {
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    font-size: 14px;
+}
+
+.page-navigation a.disabled {
+    color: #666;
+    opacity: .5;
+    cursor: default;
+}
+
+.page-navigation a.current {
+    border: 0;
+    color: #ed1b55;
+    background-color: #fff;
+    cursor: default;
+}
+
+.page-navigation>span {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.page-navigation>span input {
+    width: 35px;
+    height: 35px;
+    margin-top: -3px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.bottom-search {
+    height: 110px;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.bottom-search .links {
+    margin-bottom: 25px;
+}
+
+.bottom-search .links i {
+    margin: 0 10px;
+}
+
+.bottom-search .searchs input {
+    width: 400px;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+
+.bottom-search .searchs button {
+    width: 60px;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 3px;
+    background-color: #ed1b55;
+    color: #fff;
+    font-weight: 600;
+}

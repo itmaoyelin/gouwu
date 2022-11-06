@@ -1,0 +1,153 @@
+.logo {
+    padding-top: 29px;
+}
+
+.logo>a {
+    display: inline-block;
+    width: 175px;
+    height: 56px;
+    background: url(../img/logo1.png) no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.login {
+    background-color: #7f00ff;
+}
+
+.loginArea {
+    height: 486px;
+    background: url(../img/loginbg.png) no-repeat;
+}
+
+.login-box {
+    float: right;
+    width: 350px;
+    height: 320px;
+    margin-top: 83px;
+    /* transform: translateY(83px); */
+    background: #fff;
+}
+
+.tab-nav li {
+    float: left;
+    width: 175px;
+    height: 40px;
+    text-align: center;
+    line-height: 39px;
+    border-right: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    font-size: 20px;
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+.tab-nav li:nth-child(2) {
+    border-right: none;
+}
+
+li.active {
+    color: #c40000;
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.tab-content {
+    height: 225px;
+    padding: 25px 15px;
+}
+
+.tab-content>.hide {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.form {
+    position: relative;
+}
+
+.tab-content .form>input {
+    width: 276px;
+    height: 32px;
+    margin-bottom: 20px;
+    border: 1px solid #bbb;
+    border-radius: 0 3px 3px 0;
+    text-indent: .5rem;
+}
+
+.form span {
+    float: left;
+    width: 38px;
+    height: 32px;
+    border-radius: 3px 0 0 3px;
+    background-color: #ccc !important;
+}
+
+span.user-icon {
+    background: url(../img/icons.png) no-repeat -10px -201px;
+}
+
+span.pwd-icon {
+    background: url(../img/icons.png) no-repeat -72px -201px;
+}
+
+.form .eye-img {
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    width: 22px;
+    cursor: pointer;
+}
+
+.form div>a {
+    float: right;
+    padding-right: 10px;
+}
+
+.form>a {
+    display: block;
+    width: 280px;
+    height: 35px;
+    margin: 20px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #c40000;
+    font-size: 18px;
+    color: #fff;
+}
+
+.registration {
+    height: 50px;
+    line-height: 30px;
+    padding: 5px 15px;
+}
+
+.registration li {
+    float: left;
+    margin-right: 20px;
+}
+
+.registration li a {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    background: url(../img/regetype.png) no-repeat -18px -7px;
+}
+
+.registration li:nth-child(2) a {
+    background-position: -70px -7px;
+}
+
+.registration li:nth-child(3) a {
+    background-position: -122px -7px;
+}
+
+.registration li:nth-child(4) a {
+    background-position: -175px -7px;
+}
+
+.registration>a {
+    float: right;
+    padding-right: 10px;
+    color: #0000ff;
+}
